@@ -20,4 +20,10 @@ class Pokemon
     "INSERT INTO pokemon (name, type)
     VALUES (?, ?)", name, type)
   end
+
+  def self.find(id, db)
+    db.execute(
+    "SELECT * FROM pokemon
+    WHEFRE id = ?", id)
+  end
 end
