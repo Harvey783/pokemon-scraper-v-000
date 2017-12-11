@@ -35,3 +35,4 @@ class Pokemon
     SET hp = ?
     WHERE id = ?", hp, self.id)
   end
+end
